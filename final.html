@@ -1,0 +1,279 @@
+<html>
+    <head><title>SYM 三陽機車</title>
+    <meta charset="utf-8">
+    <link href="https://cdn.bootcss.com/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/flexslider/2.6.3/jquery.flexslider-min.js"></script>        
+    <script>
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                rtl: true
+            });
+        });
+    </script>
+    <style>
+        *{
+            margin:0;
+            color:gray;
+            text-align:center;
+        }
+        /* top */
+        .top{
+             background-color: white;
+        }
+        .top .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:10px;
+        }
+        .top .logo{
+            /*border:1px solid red;*/
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .top .logo img{
+            width: 100px;
+            vertical-align: middle;
+        }
+        .top .top-nav{
+            /*border:1px solid red;*/
+            font-size: 25px;
+            font-weight: bold;       
+        }
+        .top .top-nav a{
+            text-decoration: none;
+        }
+        /* nav */
+        .nav {
+            background-color:#333;
+            display: flex;
+            justify-content: center;
+        }
+        .nav ul {
+            list-style-type: none;  
+            margin: 0; 
+            padding: 0; 
+            overflow: hidden; 
+            background-color: #333; 
+        }
+        .nav li {
+            float: left; 
+        }
+        .nav li a {    
+            display: block;  
+            color: white;  
+            text-align: center;  
+            padding: 14px 16px;  
+            text-decoration: none;  
+        }
+        .nav li a:hover {
+            background-color: #111; 
+        }
+        /*下拉式選單*/
+        .dropdown:hover .dropdown-content {
+            display: block;   /*使用block呈現上下排列*/
+        }
+        li.dropdown:hover{
+            background-color: #333;  /*設定背景顏色*/
+        }
+        .dropdown-content {  /*設定下拉選單內容格式*/
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown-content a {/*設定下拉選單連結內容格式*/
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        /* slider */
+        .slider{
+            background-color: black;
+        }
+        /* banner*/
+        .banner{
+            background-image: linear-gradient(#ABDCFF,#0396FF);
+            padding:30px;
+        }
+        .banner h1{
+            padding: 20px;
+        }        
+        /*faculty*/
+        .faculty {
+            display: block;
+            justify-content: center;
+            background-color:white;
+            padding:40px;
+        }
+        .faculty h2 {
+            font-size: 25px;
+            color: rgb(50,51,52);
+            padding-bottom:40px;
+        }
+        .faculty .container {
+            /*border:1px solid red;*/
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .faculty .teacher{
+            /*border:1px solid blue;*/
+            display:block;
+            text-decoration: none;
+        }
+        .faculty .teacher img{
+            height: 200px;
+            width: 200px;
+        }
+        .faculty .teacher h3{
+            color: White;
+            background-color: rgba(39,40,34,.500);
+            text-align: center;           
+        }
+        /*contact*/
+        .contact {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 30px;                
+        }
+        .contact .container{
+            display: block;
+        }
+        .contact .container h2{
+            color: rgb(54, 82, 110);
+            font-size: 25px;
+        }
+        .contact .container .infos{
+            display:flex;
+            margin-top: 30px; 
+        }
+        .contact .container .infos .left{
+            display:block;
+            text-align: left;
+            margin-right: 30px;
+        }
+        .contact .container .infos .left b{
+            display:block;
+            text-align: left;
+            margin-top: 10px;
+            text-decoration: bold;
+            color: Gray;
+            font-size: 18px;
+            line-height: 18px;
+        }
+        .contact .container .infos .left span{
+            display:block;
+            text-align: left;
+            margin-top: 10px;
+            color: rgba(39,40,34,0.5);
+            font-size: 16px;
+            padding-left: 27px;
+        }
+        .contact .container .infos .right{
+            height: 200px;               
+        }
+        .contact .container .infos .right iframe{
+            width: 100%;
+            height: 100%;
+        }
+        /*footer*/
+        .footer{
+            display: flex;
+            justify-content: center;
+            background-color: rgb(25,26,30);
+            padding: 30px 0;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="top">
+            <div class="container">
+                <div class="logo">
+                  <img src="data:image/png;base64,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">
+                  三陽 SYM
+                </div>
+                <div class="top-nav">
+                  <a href=>最新消息</a>
+                  <a href=>服務專區</a>
+                  <a href=>登入</a>
+                </div>
+              </div>
+        </div>
+        <div class="nav">   
+            <ul>
+                <li><a href="#home">首頁</a></li>
+                <li><a href="#introduction">品牌簡介</a></li>
+                <li  class="dropdown"><a href="#faculty">車種介紹</a>
+                    <div class="dropdown-content">
+                        <a href="#faculty">大型重型機車</a>
+                        <a href="#faculty">150cc~250cc以下</a>
+                        <a href="#faculty">125cc~150cc以下</a>
+                    </div>                       
+                </li>
+                <li><a href="#about">經銷商據點</a></li>
+            </ul>
+        </div>
+        <div class="slider">
+            <div class="flexslider" style="direction:rtl">
+                <ul class="slides">
+                    <li><img src="https://tw.sym-global.com/storage/system/index/banner/1110818-MMB-PCv1.jpg" /></li>
+                    <li><img src="https://tw.sym-global.com/storage/system/index/banner/Maxsym-TL508_PC_Banner.jpg" /></li>
+                    <li><img src="https://tw.sym-global.com/storage/system/index/banner/banner-3.jpg" /></li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner" id="introduction">
+            <h1>品牌介紹</h1>
+            <h1>在人生前進的道路上</h1>
+            <h1>我們始終為你不斷追求以臻至完美的技術</h1>
+            <h3>超越創新的熱情，矢志成為世界級移動科技品牌</h3>
+            <h3>帶領你在每一段旅程中，發現更多移動樂趣</h3>
+            <h3>享受更多生活感動,駕馭人生更多精彩的可能!</h3>
+        </div>
+        <div class="faculty" id="faculty">
+            <h2>車種介紹</h2>
+            <div class="container">
+                <a class="teacher" href="">
+                    <img src="https://tw.sym-global.com/storage/system/product/over250/maxsymTL508/color/Woo6.png" />
+                    <h3>大型重型機車</h3>
+                </a>
+                <a class="teacher" href="">
+                    <img src="https://tw.sym-global.com/storage/system/product/150cc-250cc/MMBCU/color/V922.png" />
+                    <h3>150cc~250cc以下</h3>
+                </a>
+                <a class="teacher" href="">
+                    <img src="https://tw.sym-global.com/storage/system/product/125cc-150cc/jetsl/color/JETSL-AM500.png" />
+                    <h3>125cc~150cc以下</h3>
+                </a>        
+            </div>
+        </div>
+        <div class="contact" id="about">
+            <div class="container">
+                <h2>經銷商據點</h2>
+                <div class="infos">
+                    <div class="left">
+                        <b>三陽機車SYM</b>
+                        <span>304新竹縣新豐鄉新興路12號</span>
+                        <b> 電話:03-5597799</b>
+                       
+                        
+                    </div>
+                    <div class="right">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.9980657355804!2d120.98966681535879!3d24.863915651241697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34683154f338cca3%3A0x15a5fc238bf8acfc!2zMzA05paw56u557ij5paw6LGQ6YSJ5paw6IiI6LevMTLomZ8!5e0!3m2!1szh-TW!2stw!4v1672853396393!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            &copy;Copyright 2022 Department of Information Management, SYM. All rights reserved. 維護者 麥元朧
+        </div>
+     </body>
+</html>
